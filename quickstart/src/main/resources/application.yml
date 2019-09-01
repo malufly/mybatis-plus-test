@@ -1,0 +1,16 @@
+#配置数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.211.55.55:3306/mp
+    username: root
+    password: 4444
+
+# Logger Config
+logging:
+  level:
+    com.baomidou.mybatisplus.samples: debug
+
+#扫描mapper文件
+mybatis-plus:
+  mapper-locations: classpath:mappers/*.xml #没有注解配，只能在配置文件配置

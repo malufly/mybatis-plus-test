@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mp.example.quickstart.demo.mapper.UserMapper">
+
+<!--  必须要方法名和返回值   -->
+    <select id="getMaxAge" resultType="Integer">
+        SELECT MAX(age) FROM user
+    </select>
+
+</mapper>
